@@ -3,6 +3,7 @@ name: Hexo Blog CI(git)
 
 # master branch on push, auto run
 on: 
+  workflow_dispatch:
   push:
     branches:
       - master
