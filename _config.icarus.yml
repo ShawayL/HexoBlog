@@ -13,9 +13,9 @@ head:
         display: standalone
         icons:
             -
-                src: ''
-                sizes: ''
-                type: 
+                src: /images/logo/sasuke.png
+                sizes: 316x316
+                type: image/png
     open_graph:
         title: 
         type: blog
