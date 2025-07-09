@@ -29,6 +29,9 @@ git config --get https.proxy
 
 # 查看所有 git 配置
 git config --list
+
+#查看所有全局 git 配置
+git config --list --global
 ```
 
 > ⚠️ 注意：部分情况下 https 代理可能无效，建议优先设置 http 代理。
