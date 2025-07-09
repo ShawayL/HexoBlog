@@ -12,10 +12,10 @@ tags:
 - git
 ---
 
-### 配置代理
+### 配置代理（科学上网）
 
 ```shell
-# 设置代理
+# 设置 HTTP/HTTPS 代理
 git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
 
@@ -23,12 +23,15 @@ git config --global https.proxy http://127.0.0.1:7890
 git config --global --unset http.proxy
 git config --global --unset https.proxy
 
-# 查看git配置
+# 查看当前代理配置
+git config --get http.proxy
+git config --get https.proxy
+
+# 查看所有 git 配置
 git config --list
-git config --global --list 
 ```
 
-据说https没用
+> ⚠️ 注意：部分情况下 https 代理可能无效，建议优先设置 http 代理。
 
 ### 配置正确显示中文路径
 
